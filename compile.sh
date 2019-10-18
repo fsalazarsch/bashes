@@ -12,5 +12,6 @@ cd f2
 /Users/felipesalazar/Library/Android/sdk/build-tools/29.0.2/apksigner sign --ks /Volumes/NO\ NAME/f2/ccboksa_jks.jks --out formulario-offline-release.apk /Volumes/NO\ NAME/f2/ccbolsa2-aligned.apk 
 
 /Users/felipesalazar/Library/Android/sdk/build-tools/29.0.2/apksigner verify /Volumes/NO\ NAME/f2/formulario-offline-release.apk 
-  
-/Users/felipesalazar/Library/Android/sdk/build-tools/29.0.2/apksigner verify /Volumes/NO\ NAME/f2/formulario-offline-release.apk 
+
+#para eliminar el meta-inf
+zip -d foo.apk META-INF/*
